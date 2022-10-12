@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --primary-color:#ED6A5A;
+    --secondary-color:#587D71;
+    --dark:#0F0A0A;
+    --light:#F7F3F3;
+
+
+    --font-title: 'Montserrat', sans-serif;
+    --main-font:'Montserrat', sans-serif;;
+}
+
+body{
+    margin:0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+main{
+    margin-left: 13%;
+    margin-right: 13%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+h1{
+    color: var(--primary-color);
+    font-size: clamp(1.5625rem, 0.8079rem + 3.3537vw, 5rem);
+    text-align: center;
+    margin-bottom: 2%;
+  font-family: var(--font-title);
+}
+
+.MyDiv{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p{
+text-align: center;
+font-size: clamp(0.8125rem, 0.7165rem + 0.4268vw, 1.25rem);
+  font-family: var(--main-font);
+  line-height: 1.4;
+  margin: 0 0, 1%, 0;
+}
+
+.topicAndButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+button{
+    font-family: var(--main-font);
+    font-size: clamp(0.8125rem, 0.6479rem + 0.7317vw, 1.5625rem);
+    color: var(--primary-color);
+    width: clamp(20vw, 150px ,50vw);
+    align-items: center;
+    justify-content: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    background-color:white;
+}
+
+button:hover{
+    color: white;
+    border-color: var(--primary-color);
+    background-color:var(--primary-color);
+}
+
+
+.the-button{
+    margin-bottom: 10%;
+    margin-top: 1%; 
+    display: inline-block;
+   text-align: center;
+   padding-top: 3%;
+   padding-bottom: 3%;
+}
+
+.topic{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: clamp(0.8125rem, 0.6479rem + 0.7317vw, 1.5625rem);
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 40vw;
+}
+
+.mark{
+    background-color: var(--primary-color);
+}
+
+a{
+    text-decoration: underline var(--primary-color);
+    text-decoration-thickness: 10px ;
+    color: var(--dark);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 15vh;
+}
+footer >p{
+    font-size: clamp(0.8125rem, 0.7713rem + 0.1829vw, 1rem);
+padding-left: 15%;
+padding-right: 15%;
+}
+
+footer > p > a{
+    text-decoration-color: var(--dark);
+    text-decoration-thickness: 1vw ;
+}
+
+copyright{
+    font-family: var(--main-font);
+    font-size: clamp(0.8125rem, 0.7713rem + 0.1829vw, 1rem);
+}
+/*
+@media screen and (min-width: 1320px) and (max-width: 3000px){ 
+
+    h1{
+        font-size: 80px;
+        margin-bottom: 3%;
+    }
+    p{
+          font-size: 30px;
+          line-height: 1.4;
+          margin: 0 0, 1%, 0;
+        }
+    button{
+            font-size: 30px;
+            width: 20vw;
+        }
+
+    .topic{
+            font-size: 35px;
+            padding-right: 10%;
+            padding-left: 10%;
+            width: 40vw;
+            margin-top: 15%;
+        }
+    footer >p{
+            font-size: 1vw;
+            }
+    copyright{
+                font-size: 1vw;
+            }
+
+    .the-button{
+            margin-bottom: 15%;
+            margin-top: 1%; 
+            display: inline-block;
+               text-align: center;
+               padding-top: 1%;
+               padding-bottom: 1%;
+            }
+
+}
+@media screen and (min-width: 740px) and (max-width: 1320px) { 
+
+    h1{
+        font-size: 80px;
+        margin-bottom: 2%;
+    }
+    p{
+        font-size: ;
+          line-height: 1.4;
+          margin: 0 0, 1%, 0;
+        }
+    button{
+            font-size: 25px;
+            width: 30vw;
+        }
+
+    .topic{
+            font-size: 30px;
+            padding-right: 10%;
+            padding-left: 10%;
+            width: 40vw;
+            margin-top: 15%;
+        }
+        footer {
+            height: 10vh;
+        }
+        
+        footer >p{
+                font-size: 16px;
+                }
+
+}
+
+@media screen and (min-width:320px) and (max-width: 740px) { 
+    body{
+        margin:0;
+        overflow-y: auto;}
+
+    h1{
+        font-size: 60px;
+        margin-bottom: 2%;
+    }
+    p{
+        text-align: center;
+        font-size: 17px;
+    }
+
+    button{
+            font-size: 17px;
+            width: 60vw;
+    }
+
+    .topic{
+            font-size: 23px;
+            padding-right: 10%;
+            padding-left: 10%;
+            width: 60vw;
+            margin-top: 15%;
+    }
+    footer {
+        height: 10vh;
+    }
+    
+    footer >p{
+            font-size: 16px;
+            }
+
+ }*/
+
+ 
