@@ -34,7 +34,7 @@ var userName = undefined;
 
 document.getElementById("click").addEventListener("click", function () {
   if (userName === undefined) {
-    userName = prompt("Hi there! What is your name?");
+    userName = prompt("Hi! What's your name?");
   }
   let yourCategories;
 
