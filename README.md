@@ -9,7 +9,7 @@ R.A.D.A.R is an innovative mobile and desktop application that was inspired by t
 
 ## Installation
 To run the RADAR website locally, follow these steps:
- - Clone the repository: git clone https://github.com/ThisisPauline/tiles-behond-visible.git
+ - Clone the repository: git clone https://github.com/ThisisPauline/RADAR-generator.git
  - open it on VSCode or alike
 
 ## Credits
